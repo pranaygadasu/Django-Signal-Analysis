@@ -93,7 +93,9 @@ If you misuse them, you will:
 
 Run the server and open these:
 http://127.0.0.1:8000/test-signal/
+
 http://127.0.0.1:8000/test-thread/
+
 http://127.0.0.1:8000/test-transaction/
 
 
