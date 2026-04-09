@@ -26,7 +26,7 @@ Each endpoint answers one specific question by actually running code and observi
 
 ---
 
-## Key Findings (Straight to the Point)
+## Key Findings 
 
 ### 1. Signals are NOT async
 
@@ -36,7 +36,7 @@ When I hit the endpoint:
 - The response took ~5 seconds
 
 That means:
-👉 The request waits for the signal to finish
+The request waits for the signal to finish
 
 So:
 **Signals are synchronous and blocking**
@@ -52,8 +52,8 @@ I printed thread IDs:
 Both were identical.
 
 So:
-👉 No new thread is created  
-👉 No background execution  
+ No new thread is created  
+ No background execution  
 
 Everything runs in the same flow.
 
@@ -68,8 +68,8 @@ What happened:
 - But database changes were rolled back
 
 So:
-👉 Signal runs inside the transaction  
-👉 But rollback still undoes DB changes  
+ Signal runs inside the transaction  
+ But rollback still undoes DB changes  
 
 ---
 
